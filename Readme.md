@@ -20,8 +20,17 @@ Files:
 * poldef.v (Loads properties.v)
 
   Exercise 2.4.
+  
+  ![property](https://latex.codecogs.com/gif.latex?\forall&space;p~H~F~G,&space;p&space;\in&space;pos~H&space;\to&space;\\&space;(pol~H~p&space;=&space;\lfloor&space;1\rfloor&space;\to&space;eval~A~F\leq&space;eval~A~G\to&space;eval~A~hf\leq&space;eval~A~H[G]p)&space;\land&space;(pol~H~p&space;=&space;\lfloor&space;-1\rfloor&space;\to&space;eval~A~F\geq&space;eval~A~G\to&space;eval~A~hf\leq&space;eval~A~H[G]p))
 
 * negvarProp.v (Loads properties.v)
 
   Exercise 3.4
+  
+  ![property](https://latex.codecogs.com/gif.latex?\forall&space;F,&space;\mathit{satisfiable}~F&space;->&space;\mathit{satisfiable}&space;(\mathit{negvar}~F))
 
+
+[//]: # "
+\forall p~H~F~G, p \in pos~H \to \\ 
+(pol~H~p = \lfloor 1\rfloor \to  eval~A~F\leq eval~A~G\to eval~A~hf\leq eval~A~H[G]p) \land (pol~H~p = \lfloor -1\rfloor \to eval~A~F\geq eval~A~G\to eval~A~hf\leq eval~A~H[G]p)
+"
