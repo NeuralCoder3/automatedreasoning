@@ -55,17 +55,8 @@ Fixpoint eval {Pi} (A:Pi->bool) (F:@formula Pi) : nat :=
   | Equiv F G => if eval A F =? eval A G then 1 else 0
   end.
 
-Fixpoint negvar {Pi} (F:@formula Pi) :=
-  match F with
-    V p => Not (V p)
-  | Not f => Not (negvar f)
-  | And f1 f2 => And (negvar f1) (negvar f2)
-  | Or f1 f2 => Or (negvar f1) (negvar f2)
-  | To f1 f2 => To (negvar f1) (negvar f2)
-  | Equiv f1 f2 => Equiv (negvar f1) (negvar f2)
-  | _ => F
-  end.
-
+Definition sat {Pi} A (F:@formula Pi) : Prop := eval A F = 1.
 
 Definition satisfiable {Pi} (F:@formula Pi) : Prop :=
-  exists A, eval A F = 1.
+  exists A, sat A F.
+
