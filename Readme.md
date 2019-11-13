@@ -27,7 +27,7 @@ Files:
 
   Exercise 3.4
   
-  ![property](https://latex.codecogs.com/gif.latex?\forall&space;F,&space;\mathit{satisfiable}~F&space;->&space;\mathit{satisfiable}&space;(\mathit{negvar}~F))
+  ![property](https://latex.codecogs.com/gif.latex?\forall&space;F,&space;\mathit{satisfiable}~F&space;\to&space;\mathit{satisfiable}&space;(\mathit{negvar}~F))
 
 
 [//]: # "
