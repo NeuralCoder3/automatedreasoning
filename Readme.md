@@ -29,6 +29,10 @@ Files:
   
   ![property](https://latex.codecogs.com/gif.latex?\forall&space;F,&space;\mathit{satisfiable}~F&space;\to&space;\mathit{satisfiable}&space;(\mathit{negvar}~F))
 
+* poscomb.v
+
+  Exercise 4.4
+
 
 [//]: # "
 \forall p~H~F~G, p \in pos~H \to \\ 
